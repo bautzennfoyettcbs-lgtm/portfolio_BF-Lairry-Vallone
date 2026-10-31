@@ -1,0 +1,39 @@
+# Dépendances Node.js
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Environnement et Secrets (À NE JAMAIS COMMITER)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*/.env
+
+# Dossiers de compilation (Build outputs)
+dist/
+build/
+*/dist/
+*/build/
+
+# Fichiers temporaires & logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+
+# Cache IDE & Éditeurs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FF6B00;
+  --color-brand-orange-hover: #E05E00;
+  --color-brand-blue: #1E40AF;
+  --color-brand-blue-dark: #0F172A;
+  --color-brand-blue-navy: #0A0F1D;
+  --color-brand-blue-surface: #1E293B;
+}
+
+body {
+  background-color: #0A0F1D;
+  color: #F8FAFC;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 0, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(255, 107, 0, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 30%, #FF6B00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(255, 107, 0, 0.3);
+}
+
+.shadow-blue-glow {
+  box-shadow: 0 0 30px rgba(30, 64, 175, 0.3);
+}
